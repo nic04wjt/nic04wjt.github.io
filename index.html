@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nicole Wu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nicole Wu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nicole Wu</h1>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https:/www.linkedin.com/in/nicole-wu-01899b278/', '_blank')"
+        />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https:/github.com/nic04wjt', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+            <video class="about-pic" width="400" height="300" controls>
+                <source src="./assets/100.MP4" type="video/mp4">
+             </video>
+        </div>
+          <div class="text-container">
+            <p>
+                Hi! I'm Nicole, a computer Science student at Queen’s University. 
+                My academic background combines computer science, biology, and data science, 
+                making me particularly interested in areas like healthcare informatics, personalized medicine,
+                and machine-learning-based disease diagnosis. 
+            </p>
+            <br>
+            <p>
+                In addition to my technical interests, I’m deeply committed to education. 
+                I’ve spent several years teaching and designing engaging STEM activities to inspire curiosity and make science accessible to young learners.
+            </p>
+            <br>
+            <p>
+                Outside of academics, I enjoy staying active through sports, especially rowing and rugby, 
+                which help me balance my studies and fuel my love for teamwork and perseverance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+      
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+      
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/IB.png"
+                alt="Antibacterial Effects Project"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <h2 class="project-title">Antibacterial Effects of Chinese Herbal Medicine</h2>
+              <p>
+                IB Biology research project which investigated antibacterial properties of herbal medicine using <em>E. coli</em>. Conducted experiments with spectrophotometers and analyzed data to explore alternative treatments.
+              </p>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Antibacterial.pdf', '_blank')"
+                >
+                View Details
+              </button>
+            </div>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+              src="./assets/IB.png"
+                alt="Pesticides and Radish Metabolism Project"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <h2 class="project-title">Pesticides and Radish Metabolism</h2>
+              <p>
+                IB Biology research project which explored how pesticides impact metabolic pathways in radish plants. Used Logger Pro for data analysis and presented findings on biochemical changes.
+              </p>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Pesticides.pdf', '_blank')"
+                >
+                View Details
+              </button>
+            </div>
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/Jupiter.png"
+                alt="Mapping Jupiter Project"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <h2 class="project-title">Mapping Jupiter</h2>
+              <p>
+                Tracked Jupiter’s position over several nights using celestial tracking software. Analyzed motion patterns and visualized changes in trajectory.
+              </p>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https:/github.com/nic04wjt/Mapping-Jupiter', '_blank')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+      
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/Pedigree.png"
+                alt="Genetic Pedigree Analysis Project"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <h2 class="project-title">Genetic Pedigree Analysis</h2>
+              <p>
+                Developed a Python-based tool to predict inheritance patterns in pedigrees, integrating principles of genetics with computational analysis.
+              </p>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https:/github.com/annika-t/pedigree-analysis-project-', '_blank')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+      
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/teacher.png"
+                alt="Logic Gates STEM Outreach Project"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <h2 class="project-title">Curriculum Plans for Tutoring Business</h2>
+              <p>
+                Developed comprehensive lesson plans for grammar, reading, and oral expression tailored to young learners preparing for standardized exams such as MAP and TOEFL. 
+                Each curriculum focuses on enhancing critical skills like analytical reading, grammar mastery, and speaking confidence.
+                </p>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/Curriculum.pdf', '_blank')"
+                >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div> 
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      
+  
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nic04le.w@gmail.com">nic04le.w@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p id="copyright"></p>
+      </footer>
+      
+      <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Set the copyright text dynamically
+        document.getElementById("copyright").innerHTML =
+          `Copyright &#169; ${currentYear} Nicole Wu. All Rights Reserved.`;   
+   </script>
+  </body>
+</html>
