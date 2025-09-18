@@ -1,8 +1,19 @@
-# Group 30 CISC 322 Project
-## Members:
-- Ibrahim Kettaneh
-- Sophie Liang
+# We are N.I.N.J.A.S
 - Noelle Morley
-- Annika Tran
+- Ibrahim Kettaneh
 - Nicole Wu
 - Joshua Zheng
+- Annika Tran
+- Sophie Liang
+
+## About Project
+- 
+
+## Assignment Links
+- [Assignment 1](#)
+- [Assignment 2](#)
+- [Assignment 3](#)
+
+## Relevant Links
+- [Project Repository](#)
+- [Documentation](#)
